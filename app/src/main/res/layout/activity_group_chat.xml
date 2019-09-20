@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatActivity"
+    android:background="@drawable/default_wallpaper"
+    >
+
+
+    <include
+
+        android:id="@+id/groupChat_bar"
+        layout="@layout/app_bar_layout"
+      >
+
+    </include>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/groupChat_bar"
+        android:layout_above="@id/Send_view"
+        android:id="@+id/Scroll_Group_chat"
+      >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/group_chat_Text"
+              android:textSize="20sp"
+              android:padding="10dp"
+              android:textAllCaps="false"
+              android:textColor="@android:color/background_dark"
+              android:layout_marginStart="2dp"
+              android:layout_marginEnd="2dp"
+              android:layout_marginBottom="50dp"
+
+
+
+
+              />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/Send_view"
+        android:padding="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="7dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        
+        
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Message"
+            android:hint=" Type a message"
+            android:background="@drawable/input"
+            android:backgroundTint="@color/colorAccent"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send_icon"
+            android:id="@+id/Send_btn"
+            android:background="@drawable/input"
+            android:backgroundTint="@color/colorPrimaryDark"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

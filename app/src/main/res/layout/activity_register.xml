@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/RegisterImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/sign_up"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitCenter"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/RegisterImage"
+        android:id="@+id/Email"
+        android:padding="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:inputType="textEmailAddress"
+        android:hint="    Email "
+        android:backgroundTint="#FFFF"
+        android:background="@drawable/input"
+        android:elevation="7dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/Email"
+        android:id="@+id/Password"
+        android:backgroundTint="#FFFF"
+        android:background="@drawable/input"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+        android:inputType="textPassword"
+        android:hint="    Password"
+        android:elevation="7dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/Create_Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Password"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Create Account"
+        android:textSize="15dp"
+        android:textAllCaps="false"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Create_Account"
+        android:id="@+id/Already_have_Account"
+        android:padding="4dp"
+        android:text=" Already have an Account ?"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+
+        />
+
+
+</RelativeLayout>

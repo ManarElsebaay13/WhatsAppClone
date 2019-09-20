@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "630389050035",
+    "firebase_url": "https://scopechat-bd48d.firebaseio.com",
+    "project_id": "scopechat-bd48d",
+    "storage_bucket": "scopechat-bd48d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630389050035:android:31f00d5a464a21788fbec6",
+        "android_client_info": {
+          "package_name": "com.example.manarelsebaay.scopechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630389050035-1v65ugmuq87ag2qornl15vvtr82nef3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.manarelsebaay.scopechat",
+            "certificate_hash": "277a559a02dcc515e8d58a37b38524f9e9405ec5"
+          }
+        },
+        {
+          "client_id": "630389050035-1klspvoug5p4seks7kc3a74rp2e1uf7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5HgXxAferDbPgsgWBOJ7xJyFlDiHqhgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630389050035-1klspvoug5p4seks7kc3a74rp2e1uf7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

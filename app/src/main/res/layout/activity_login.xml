@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:id="@+id/Scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/loginImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/sign_in"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitCenter"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/loginImage"
+                android:id="@+id/Email"
+                android:padding="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:inputType="textEmailAddress"
+                android:hint="    Email "
+                android:backgroundTint="#FFFF"
+                android:background="@drawable/input"
+                android:elevation="7dp"
+                />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/Email"
+                android:id="@+id/Password"
+                android:backgroundTint="#FFFF"
+                android:background="@drawable/input"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableStart="@drawable/ic_vpn_key_black_24dp"
+                android:inputType="textPassword"
+                android:hint="    Password"
+                android:elevation="7dp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Password"
+                android:id="@+id/forget_password"
+                android:padding="4dp"
+                android:layout_marginTop="5dp"
+                android:text=" Forget your Password ?"
+                android:layout_alignEnd="@id/Password"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forget_password"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login"
+                android:id="@+id/login_with_phone"
+                android:padding="4dp"
+                android:text="or Login With Your"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_with_phone"
+                android:id="@+id/Phone"
+
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="phone"
+                android:textAllCaps="false"
+                android:textColor="@color/common_google_signin_btn_text_dark"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:background="@drawable/input"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Phone"
+                android:id="@+id/Create_new_Account"
+                android:padding="4dp"
+                android:text=" Create New Account ?"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:gravity="right"
+                android:textSize="18dp"
+                android:textColor="@color/colorPrimaryDark"
+
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    
+</RelativeLayout>
